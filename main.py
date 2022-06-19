@@ -391,7 +391,7 @@ class MyApp(App):
     ui = UI()
 
     def build(self):
-        self.title = "SLAM"
+        self.title = "A*"
         return self.ui
 
 
