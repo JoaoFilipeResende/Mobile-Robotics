@@ -1,0 +1,20 @@
+<MapEditor>:
+    _create_map_grid: create_map_grid
+    Button:
+        id: save_map
+        text: 'Save Map'
+        size_hint: 0.2, 0.08
+        x: create_map_grid.x + create_map_grid.width - save_map.width
+        y: create_map_grid.y - save_map.height*1.1
+        on_press: root.save_map_callback()
+
+    GridLayout:
+        id: create_map_grid
+        size_hint: 0.8, 0.8
+        pos_hint:{"x": 0.1, "y": 0.1}
+        canvas:
+            Color:
+                rgba: 1,1,1,0
+            Rectangle:
+                pos: self.pos
+                size: self.size

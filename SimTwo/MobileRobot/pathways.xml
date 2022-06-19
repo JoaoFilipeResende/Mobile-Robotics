@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+
+<obstacles> 
+  <defines>
+    <const name='path_width' value='0.250'/>
+    <const name='path_height' value='0.150'/>
+    <const name='path_center' value='(1 + path_width)/2'/>
+
+  </defines>
+
+
+ <cuboid>
+    <ID value='path1'/>
+    <size x='1 + path_width' y='path_width' z='path_height' />
+    <pos x='1/2' y='0' z='0'/>
+    <rot_deg x='0' y='0' z='0'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+  <cuboid>
+    <ID value='path2'/>
+    <size x='1 + path_width' y='path_width' z='path_height' />
+    <pos x='1' y='1/2' z='0'/>
+    <rot_deg x='0' y='0' z='90'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+ <cuboid>
+    <ID value='path3'/>
+    <size x='sqrt(2)' y='path_width' z='path_height' />
+    <pos x='1/2 + 0.15 * path_width' y='(1 + 1/2) + 0.15 * path_width' z='0'/>
+    <rot_deg x='0' y='0' z='135'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+ <cuboid>
+    <ID value='path4'/>
+    <size x='1 + path_width' y='path_width' z='path_height' />
+    <pos x='-1/2' y='2' z='0'/>
+    <rot_deg x='0' y='0' z='0'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+  <cuboid>
+    <ID value='path5'/>
+    <size x='1 + path_width' y='path_width' z='path_height' />
+    <pos x='-1' y='2+ 1/2' z='0'/>
+    <rot_deg x='0' y='0' z='90'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+   <cuboid>
+    <ID value='path6'/>
+    <size x='1 + path_width' y='path_width' z='path_height' />
+    <pos x='-1 -1/2' y='3' z='0'/>
+    <rot_deg x='0' y='0' z='0'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+  <cuboid>
+    <ID value='path7'/>
+    <size x='3 + path_width' y='path_width' z='path_height' />
+    <pos x='-2' y='2 - 1/2' z='0'/>
+    <rot_deg x='0' y='0' z='90'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+  <!--
+  <cylinder>
+    <ID value='path8'/>
+    <size x='1' y='1' z='path_height'/>
+    <pos x='-2' y='1 - path_width/2' z='0'/>
+    <rot_deg x='90' y='0' z='90'/>
+    <color_rgb r='250' g='140' b='10'/>  >
+  </cylinder>
+
+  <cylinder>
+    <ID value='path8b'/>
+    <size x='0.6' y='1' z='3 * path_height'/>
+    <pos x='-2' y='1 - path_width/2' z='0'/>
+    <rot_deg x='90' y='0' z='90'/>
+    <color_rgb r='250' g='140' b='10'/>  >
+  </cylinder>
+  -->
+
+  <cuboid>
+    <ID value='path9'/>
+    <size x='2 + 0' y='path_width' z='path_height' />
+    <pos x='-1' y='0' z='0'/>
+    <rot_deg x='0' y='0' z='0'/>
+    <color_rgb r='250' g='140' b='10'/>
+  </cuboid>
+
+
+</obstacles>

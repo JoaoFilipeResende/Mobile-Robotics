@@ -1,0 +1,65 @@
+<UI>:
+    _map_grid: map_grid
+    _switch_post_processing: switch_post_processing
+    _switch_control: switch_control
+
+    Button:
+        id: clean_btn
+        text: 'Clean Map'
+        size_hint: 0.15, 0.1
+        x: map_grid.x + map_grid.width - clean_btn.width
+        y: map_grid.y - clean_btn.height*1.1
+        on_press: root.clean_callback()
+
+    Button:
+        id: create_map
+        text: 'Change Map'
+        size_hint: 0.15, 0.1
+        x: map_grid.x + map_grid.width - create_map.width*2.05
+        y: map_grid.y - create_map.height*1.1
+        on_press: root.create_map_callback()
+
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: clean_btn.size_hint
+        width: clean_btn.width
+        height: clean_btn.height
+        pos_hint:{"x": 0.05, "y": 0.85}
+
+        Label:
+            text: "Post-Processing"
+            height: clean_btn.height
+            width: clean_btn.width
+
+        Switch:
+            id: switch_post_processing
+            active: False
+
+
+    BoxLayout:
+        orientation: "vertical"
+        size_hint: clean_btn.size_hint
+        width: clean_btn.width
+        height: clean_btn.height
+        x: switch_post_processing.x
+        y: switch_post_processing.y-clean_btn.height*1.1
+
+        Label:
+            text: "Control:"
+            height: clean_btn.height
+            width: clean_btn.width
+
+        Switch:
+            id: switch_control
+            active: False
+
+    GridLayout:
+        id: map_grid
+        size_hint: 0.65, 0.65
+        pos_hint:{"x": 0.3, "y": 0.3}
+        canvas:
+            Color:
+                rgba: 1,1,1,0
+            Rectangle:
+                pos: self.pos
+                size: self.size

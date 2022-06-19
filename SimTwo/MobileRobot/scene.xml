@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<scene>
+  <defines>
+    <const name='ground' value='0.001' />
+  </defines>
+
+  <!-- Track Setup -->
+  <!--<track file='track.xml'/>-->
+  
+  <!-- Walls Setup -->
+  <obstacles file='pathways.xml'/>
+
+  <robot>
+    <ID name='MobileRobot'/>
+    <pos x='0' y='0' z='0.15'/>
+    <rot_deg x='0' y='0' z='90'/>
+    <body file='AGV.xml'/>
+  </robot>
+
+  <!--things file='things.xml'/-->
+
+</scene>
+
